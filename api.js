@@ -78,10 +78,10 @@ app.get("/api/data/alpha-vantage", async (req, res) => {
                 apikey: "AFRKDTP67QNLOLAC"
             },
         })
-        res.json(response.data)
+       
         
-
-        // res.json(response.data[`Time Series (${interval})`])
+        res.json(response.data[`Time Series (${interval})`])
+        //res.json(response.data)
 
         //This is currently unable to function
         //I will get back to it if we need it later
